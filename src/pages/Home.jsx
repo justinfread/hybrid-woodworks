@@ -1,18 +1,9 @@
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
 
-const Home = () => {
-  return (
-    <>
-      <Header />
-      <main>
-        <h1>Welcome to Hybrid Woodworks</h1>
-        <p>Handcrafted reclaimed wood wall art...</p>
-        {/* Your hero, gallery, etc. */}
-      </main>
-      <Footer />
-    </>
-  );
-};
+const Home = () => (
+  <main style={{ padding: '4rem', textAlign: 'center' }}>
+    <h1>Welcome to Hybrid Woodworks</h1>
+    <p>Handcrafted reclaimed wood wall art — unique pieces for your home.</p>
+  </main>
+);
 
 export default Home;

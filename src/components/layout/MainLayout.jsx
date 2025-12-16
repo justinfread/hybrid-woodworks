@@ -1,13 +1,11 @@
-import { Outlet } from 'react-router-dom';  // Note: vite-plugin-pages uses react-router under hood
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+import { Outlet } from 'react-router-dom'
 
 const MainLayout = () => (
   <>
     <Header />
-    <main>
-      <Outlet />  {/* Renders the current page */}
-    </main>
+    <Outlet />  {/* Page content here */}
     <Footer />
   </>
 );
