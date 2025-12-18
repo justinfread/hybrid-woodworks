@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import pages from 'vite-plugin-pages'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import pages from 'vite-plugin-pages';
 
 export default defineConfig({
-  plugins: [react(), pages()],
-})
+  plugins: [react(), pages({ dirs: 'src/pages' })],
+});
